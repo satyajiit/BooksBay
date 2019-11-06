@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="20dp"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="error_ntwrk.json"/>
+
+
+    <TextView
+        android:layout_below="@id/lv"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/ntwrk_error"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_below="@id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="@string/ntwrk_error_sub"
+        />
+
+
+    <TextView
+        android:layout_below="@id/text3"
+        android:id="@+id/retry_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/retry_con"
+        android:fontFamily="@font/cav"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

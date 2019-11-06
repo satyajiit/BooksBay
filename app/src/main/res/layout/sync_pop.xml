@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="@dimen/padding_10"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/padding_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lv2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        app:lottie_loop="true"
+        android:layout_marginTop="-30dp"
+        app:lottie_fileName="cloud.json"/>
+
+    <TextView
+        android:id="@+id/sync_tv"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:textColor="@color/black"
+        android:text="Syncing..."/>
+
+
+
+    <Button
+        android:id="@+id/click_close"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cav"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:text="@string/minimise"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

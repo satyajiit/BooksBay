@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/crd"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_margin="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_struct"
+                app:cardCornerRadius="5dp"
+                android:elevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_book"
+                    android:layout_width="60dp"
+                    android:scaleType="fitXY"
+                    android:background="#000"
+                    android:layout_height="90dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="top|end"
+                    android:elevation="5dp">
+                    <TextView
+                        android:id="@+id/on_image"
+                        android:layout_width="55dp"
+                        android:textColor="#fff"
+                        android:layout_height="wrap_content"
+                        android:text="Testing"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="end"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/cav"
+                        />
+
+                    <View
+                        android:id="@+id/line_img"
+                        android:layout_width="36dp"
+                        android:gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:elevation="10dp"
+                        android:layout_height="2dp"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:elevation="5dp"
+                    android:background="#D1C4E9"
+                    android:layout_marginStart="1.5dp"
+                    android:layout_height="90dp"/>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:elevation="5dp"
+                    android:background="#D1C4E9"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="90dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/on_image_author"
+                    android:layout_width="55dp"
+                    android:textColor="#EDE7F6"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:gravity="end"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="7sp"
+                    android:fontFamily="@font/cav"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/crd_struct"
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cav"
+                android:paddingTop="17dp"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text="Loading.."/>
+
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/crd_struct"
+        android:fontFamily="@font/cav"
+        android:paddingEnd="10dp"
+        android:text="Loading.."
+        android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/rating_tv"
+                android:layout_toEndOf="@id/crd_struct"
+                android:layout_below="@id/author"
+                android:layout_marginTop="8dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/cav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                android:transformPivotX="0dp"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_below="@id/author"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/rating_tv"/>
+
+
+
+
+        </RelativeLayout>
+
+

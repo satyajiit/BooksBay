@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/genres_act"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/books_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/error_view"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lv2"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="error.json"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/error"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:layout_marginTop="9dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text="@string/some_error"
+            />
+
+        <TextView
+            android:id="@+id/retry_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/retry_con"
+            android:fontFamily="@font/cav"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="retry"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/no_data_view"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/data_la"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="no_data.json"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_data"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:layout_marginTop="9dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text="@string/no_data_sub"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:fontFamily="@font/cav"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

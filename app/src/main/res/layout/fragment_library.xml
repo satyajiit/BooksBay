@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LibraryFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tool"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/tbar"
+            app:popupTheme="@style/tbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_rounded"
+                android:queryHint="Search by book..."
+                android:iconifiedByDefault="false"
+                android:queryBackground="@android:color/transparent"
+                android:layout_alignParentTop="true"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+
+    android:layout_below="@id/tool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/linear_u_like"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:text="@string/new_added"/>
+
+
+
+
+<LinearLayout
+    android:id="@+id/section1"
+    android:orientation="vertical"
+    android:layout_below="@id/linear_u_like"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_arrival_books"
+        android:paddingStart="@dimen/padding_10"
+        android:visibility="gone"
+        android:paddingEnd="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/icon_prev"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10"
+        android:id="@+id/icon_prev2"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+        <include layout="@layout/shm_icon"/>
+    </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/section1"
+    android:id="@+id/cat_tv"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:text="@string/category_text"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/more_genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:gravity="end"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/more_text"/>
+
+
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cats_recycler"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:layout_below="@id/cat_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/new_u_may_like"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cats_recycler"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:text="@string/top_rated"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/section2"
+            android:orientation="vertical"
+            android:layout_below="@id/new_u_may_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/top_rated_books"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/padding_10"
+                android:layout_marginEnd="@dimen/padding_10"
+                android:background="#EEEEEE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/icon_prev3"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_10"
+                android:id="@+id/icon_prev4"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/ncert_tv"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:layout_below="@id/section2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:text="@string/ncert_category_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ncert_recycler"
+        android:paddingStart="@dimen/padding_10"
+        android:paddingEnd="@dimen/padding_10"
+        android:layout_below="@id/ncert_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:layout_below="@id/ncert_recycler"
+            android:id="@+id/hits_books"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:text="@string/hits_high"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/section3"
+            android:orientation="vertical"
+            android:layout_below="@id/hits_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/high_hits_books"
+                android:paddingStart="@dimen/padding_10"
+                android:visibility="gone"
+                android:background="#EEEEEE"
+                android:paddingEnd="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/icon_prev5"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_10"
+                android:id="@+id/icon_prev6"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+                <include layout="@layout/shm_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/eng_tv"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_10"
+            android:layout_below="@id/section3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:text="@string/eng_books_text"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eng_recycler"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_10"
+            android:layout_below="@id/eng_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@id/eng_recycler"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99E8F5E9">
+
+            <TextView
+                android:id="@+id/quote_info"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_quo"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

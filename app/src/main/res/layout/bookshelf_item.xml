@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd_struct"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_book"
+                android:layout_width="150dp"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="#000"
+                android:layout_height="190dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|end"
+                android:elevation="5dp">
+                <TextView
+                    android:id="@+id/on_image_bookshelf"
+                    android:layout_width="100dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:text="Testing"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="end"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/cav"
+                    />
+
+                <View
+                    android:id="@+id/line_img"
+                    android:layout_width="66dp"
+                    android:gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:elevation="10dp"
+                    android:layout_height="2dp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0.4dp"
+                android:elevation="5dp"
+                android:background="#D1C4E9"
+                android:layout_marginStart="1.5dp"
+                android:layout_height="190dp"/>
+
+
+            <View
+                android:layout_width="0.7dp"
+                android:elevation="5dp"
+                android:background="#D1C4E9"
+                android:layout_marginStart="5dp"
+                android:layout_height="190dp"/>
+
+
+
+            <TextView
+                android:id="@+id/on_image_author_bookshelf"
+                android:layout_width="100dp"
+                android:textColor="#EDE7F6"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:gravity="end"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="bottom|end"
+                android:textSize="12sp"
+                android:fontFamily="@font/cav"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+
+
+            android:id="@+id/book_name_bookshelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/cav"
+            android:text="@string/test_quo"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

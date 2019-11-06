@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_centerHorizontal="true"
+    app:cardCornerRadius="4dp"
+    android:focusable="true">
+
+        <ScrollView
+
+
+            android:layout_width="305dp"
+            android:layout_height="355dp">
+
+
+            <WebView
+                android:id="@+id/policy_webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cav"
+                android:text="@string/html"
+                />
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/pop_ok"
+        android:layout_below="@id/sv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rect_circular"
+        android:text="@string/OK"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_10"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

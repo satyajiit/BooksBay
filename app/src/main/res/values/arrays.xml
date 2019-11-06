@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_ncert" >
+
+
+        <item>Class VI</item>
+        <item>Class VII</item>
+        <item>Class VIII</item>
+        <item>Class IX</item>
+        <item>Class X</item>
+        <item>Class XI</item>
+        <item>Class XII</item>
+</string-array>
+
+
+    <string-array name="eng_books">
+
+
+        <item>#CSE</item>
+        <item>#MEC</item>
+        <item>#BIO-TECH</item>
+        <item>#CIVIL</item>
+        <item>#CHEMICAL</item>
+        <item>#ECE</item>
+
+    </string-array>
+
+</resources>

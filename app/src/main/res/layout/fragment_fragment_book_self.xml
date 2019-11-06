@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BookSelfFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tool"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/tbar"
+            app:popupTheme="@style/tbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/cav"
+    android:textSize="20sp"
+    android:padding="@dimen/padding_10"
+    android:text="@string/Bookshelf_title"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+        android:layout_below="@id/tool"
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/padding_10"
+        android:id="@+id/items_stored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/data_la"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="no_data.json"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@id/data_la"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_data"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="REFRESH"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@drawable/rect_circular"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_10"/>
+
+
+
+</RelativeLayout>
+</FrameLayout>

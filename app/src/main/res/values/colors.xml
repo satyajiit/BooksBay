@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#7B1FA2</color>
+    <color name="colorPrimary">#7B1FA2</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="white">#fff</color>
+    <color name="colorbar">#fff</color>
+    <color name="tabTextColor">#fff</color>
+
+    <color name="background">#dddddd</color>
+
+
+
+    <color name="bright_pink">#E91E63</color>
+    <color name="red">#FF9800</color>
+    <color name="orange">#009688</color>
+    <color name="yellow">#2196F3</color>
+    <color name="chartreuse">#795548</color>
+    <color name="green">#4CAF50</color>
+    <color name="spring_green">#EF6C00</color>
+    <color name="cyan">#C62828</color>
+    <color name="azure">#283593</color>
+    <color name="blue">#D81B60</color>
+    <color name="violet">#00897B</color>
+    <color name="magenta">#8E24AA</color>
+    <color name="arw_clr">#616161</color>
+
+
+    <array name="books">
+
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/chartreuse</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/magenta</item>
+        <item>@color/violet</item>
+        <item>@color/blue</item>
+
+    </array>
+</resources>

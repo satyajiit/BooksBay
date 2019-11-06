@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/searching"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="searching.json"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="-20dp"
+        android:id="@+id/no_result_anim"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="no_result.json"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_res_tv"
+        android:layout_below="@id/no_result_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/no_result"/>
+
+    <Button
+        android:id="@+id/request_book"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_10"
+        android:fontFamily="@font/cav"
+        android:onClick="requestBook"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/no_res_tv"
+        android:text="@string/request_book"/>
+
+
+</RelativeLayout>

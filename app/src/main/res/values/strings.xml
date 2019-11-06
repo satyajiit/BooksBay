@@ -1,0 +1,134 @@
+<resources>
+    <integer-array name="cats_images">
+
+        <item>@drawable/romance</item>
+        <item>@drawable/mystery</item>
+        <item>@drawable/scf</item>
+        <item>@drawable/fantasy</item>
+        <item>@drawable/education</item>
+        <item>@drawable/history</item>
+        <item>@drawable/tech</item>
+        <item>@drawable/bio</item>
+        <item>@drawable/adult</item>
+        <item>@drawable/comics</item>
+
+    </integer-array>
+    <string name="app_name">BooksBay</string>
+    <string name="title_shelf">Bookshelf</string>
+    <string name="title_lib">Library</string>
+    <string name="title_user">Me</string>
+    <string name="splash_text">BOOKS BAY</string>
+
+
+    <string name="splash_sub">Anytime &#8226; Anywhere &#8226; Free</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_text">Genres</string>
+    <string name="more_text">MORE</string>
+    <string name="error">Ops..Something went Wrong!</string>
+    <string name="ntwrk_error_sub">Is your Internet really Working?</string>
+
+
+    <string name="retry_con">RETRY</string>
+    <string name="back">BACK</string>
+    <string name="no_data">NO BOOKS :(</string>
+    <string name="no_data_sub">More Books Will be Added Soon.</string>
+    <string name="some_error">I think something just messed up E008</string>
+    <string name="ntwrk_error">NO INTERNET</string>
+    <string name="upload_text">Uploaded by\u0020</string>
+    <string name="upload_text_admin">Uploaded by Satyajit</string>
+    <string name="send_as_gift">SEND AS GIFT</string>
+    <string name="uploader">UPLOADER</string>
+    <string name="hits">HITS</string>
+    <string name="TOTAL">TOTAL\u0020\u0020</string>
+    <string name="MB">MB</string>
+    <string name="size">SIZE</string>
+    <string name="language">LANG</string>
+    <string name="english">English</string>
+    <string name="intro_text_info">Introduction</string>
+    <string name="lang_e">E</string>
+    <string name="sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="genre_info">Genre</string>
+    <string name="read">READ</string>
+    <string name="test_quo">“Don\'t cry for shit.”</string>
+    <string name="Bookshelf">Bookshelf</string>
+    <string name="download">Download</string>
+    <string name="ratings">Ratings</string>
+    <string name="more_text_intro">....Read More</string>
+    <string name="not_avail">Not Available</string>
+    <string name="available">Available</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="download_complete">Download Success!</string>
+    <string name="already_downloaded">Already Downloaded...!</string>
+    <string name="Bookshelf_added">Added</string>
+    <string name="help">Help</string>
+    <string name="dmca_msg">For copyright claims, please check https://SatyaJiit.Xyz/dmca for more details.</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="u_mgiht_like">You might like</string>
+    <string name="ncert_category_text">NCERT BOOKS</string>
+    <string name="u_mgiht_like_new">New Arrivals</string>
+    <string name="new_added">NEW ARRIVALS</string>
+    <string name="top_rated">TOP RATED</string>
+    <string name="ncert">NCERT</string>
+    <string name="admin_name">Satyajit</string>
+    <string name="hits_high">TOP HITS</string>
+    <string name="eng_books_text">Engineering Books</string>
+    <string name="night_mode">Would you like to read the book in Night Mode?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="rate_books">Rate THIS Book</string>
+    <string name="rate_tv">I want to give ...</string>
+    <string name="rate_btn">RATE THIS BOOK</string>
+    <string name="already_rated">You have already rated this book!</string>
+    <string name="no_result">No Books Found</string>
+    <string name="request_book">Request Book</string>
+    <string name="request_tv">REQUEST A BOOK</string>
+    <string name="book_name">Book name...</string>
+    <string name="book_details">Details like author name</string>
+    <string name="request_book_btn">REQUEST BOOK</string>
+    <string name="user_info">Email/Phn to get notified..</string>
+    <string name="Bookshelf_title">Saved Books</string>
+    <string name="sign_in">Sign in</string>
+    <string name="i_love_this_app">I Love this App</string>
+    <string name="share_with_frnds">Share with friends</string>
+    <string name="upload_book">Upload Book</string>
+    <string name="about_us">About Us</string>
+    <string name="skip">Skip</string>
+    <string name="login_msg">Sign in to sync \nyour bookshelf and records.</string>
+    <string name="login_with_google">Sign in with Google</string>
+    <string name="terms_login">By continuing, you accept the&#160;</string>
+    <string name="terms_of_service"><b><u>Terms of Service</u></b></string>
+    <string name="and">&#160;and&#160;</string>
+    <string name="disclaimer"><b><u>Disclaimer</u></b></string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+
+
+    <string name="facebook_app_id">id_here</string>
+    <string name="fb_login_protocol_scheme">id_here</string>
+    <string name="share_msg">Try this awesome app on Play store which has thousands of book collections!! \n \n</string>
+    <string name="rate_us_btn">Rate the App</string>
+    <string name="welcome">Welcome</string>
+    <string name="fail">Login Failed!</string>
+    <string name="default_web_client_idd"></string>
+    <string name="logout">Logout</string>
+    <string name="minimise">Minimise</string>
+    <string name="download_started">Download Started</string>
+    <string name="download_in_prog">Download in Progress...</string>
+    <string name="html">HTML</string>
+
+
+    <string-array name="cats">
+        <item>Romance</item>
+        <item>Mystery</item>
+        <item>Science Fiction</item>
+        <item>Fantasy</item>
+        <item>Education</item>
+        <item>History</item>
+        <item>Information Technology</item>
+        <item>Biography</item>
+        <item>Young Adult</item>
+        <item>Comics</item>
+    </string-array>
+
+</resources>

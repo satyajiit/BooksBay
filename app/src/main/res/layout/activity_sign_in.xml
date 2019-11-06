@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity.SignInActivity">
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/padding_10"
+        android:id="@+id/login_skip"
+        android:fontFamily="@font/cav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:onClick="skipBtn"
+        android:background="@drawable/circular_btn"
+        android:text="@string/skip"/>
+
+    <TextView
+        android:id="@+id/login_msg_tv"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/login_skip"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:textSize="22sp"
+        android:text="@string/login_msg"/>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="-190dp"
+        android:layout_below="@id/login_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="cloud_sync.json"/>
+
+
+
+    <com.facebook.login.widget.LoginButton
+
+        android:id="@+id/sign_in_facebook"
+
+        android:fontFamily="@font/cav"
+        android:textSize="17sp"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:background="@drawable/button_state_list_animator"
+        android:layout_above="@id/sign_in_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:padding="17dp"
+        android:layout_marginEnd="44dp"
+        android:id="@+id/fb"
+        android:fontFamily="@font/cav"
+        android:onClick="onClickFacebookButton"
+        android:textAllCaps="false"
+        android:text="@string/sign_in_facebook"
+        android:textSize="17sp"
+        android:textColor="#ffffff" />
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_above="@id/tos"
+        android:layout_marginTop="5dp"
+        android:id="@+id/sign_in_google"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_width="match_parent"
+        app:buttonSize="standard"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:textSize="12sp"
+        android:text="@string/terms_login"
+       />
+
+        <TextView
+            android:id="@+id/terms_login_page"
+            android:textSize="12sp"
+            android:onClick="terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_of_service"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="12sp"
+            android:text="@string/and"
+            />
+
+
+        <TextView
+            android:id="@+id/diclaimer_login_page"
+            android:textSize="12sp"
+            android:onClick="disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

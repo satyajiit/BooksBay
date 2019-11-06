@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+
+        android:id="@+id/shimmer_about"
+        layout="@layout/shimmer_prev"/>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/error_about"
+        layout="@layout/error_view"/>
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/content_about"
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="false"
+        android:layout_height="wrap_content"
+        android:paddingBottom="65dp">
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".activity.AboutBookActivity">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layer1"
+                android:layout_margin="0.5dp"
+                app:cardCornerRadius="4dp"
+                android:elevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bg_info_imagee"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/bg_info_image2"
+                        android:background="#50000000"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="39dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crd_struct"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginStart="20dp"
+                            android:elevation="8dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardBackgroundColor="#3949AB"
+                            android:layout_width="125dp"
+                            android:layout_height="180dp">
+
+                            <ImageView
+                                android:id="@+id/img_book"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:layout_height="match_parent"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:gravity="end"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="top|end"
+                                android:elevation="5dp">
+                                <TextView
+                                    android:id="@+id/on_image_name_about"
+                                    android:layout_width="70dp"
+                                    android:textColor="#fff"
+                                    android:layout_height="wrap_content"
+                                    android:text="Testing"
+                                    android:layout_marginEnd="2dp"
+                                    android:gravity="end"
+                                    android:textSize="11sp"
+                                    android:fontFamily="@font/cav"
+                                    />
+
+                                <View
+                                    android:id="@+id/line_img"
+                                    android:layout_width="40dp"
+                                    android:gravity="end"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#fff"
+                                    android:elevation="10dp"
+                                    android:layout_height="2dp"
+                                    />
+
+
+
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:elevation="5dp"
+                                android:background="#E0D8EE"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <View
+                                android:layout_width="0.8dp"
+                                android:elevation="5dp"
+                                android:background="#E1DBEB"
+                                android:layout_marginStart="10dp"
+                                android:layout_height="match_parent"/>
+
+
+
+                            <TextView
+                                android:id="@+id/on_image_author"
+                                android:layout_width="70dp"
+                                android:textColor="#EDE7F6"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ncert"
+                                android:gravity="end"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_gravity="bottom|end"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/cav"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="18dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/book_name_about"
+                                android:textColor="#fff"
+                                android:fontFamily="@font/cav"
+                                android:alpha="0.9"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BOOK NAME HERE"/>
+
+                            <TextView
+                                android:id="@+id/author_click_from_info"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/cav"
+                                android:textSize="14sp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ncert"/>
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_marginTop="20dp"
+                        android:layout_margin="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/send_as_gift"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/cav"
+                        android:background="@drawable/btn_design"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:paddingStart="110dp"
+                        android:paddingEnd="110dp"
+                        android:drawableStart="@drawable/gift_ic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <HorizontalScrollView
+                android:id="@+id/layer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layer1"
+                android:scrollbars="none"
+                android:fillViewport="true">
+
+                <androidx.cardview.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="130dp">
+
+
+
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="@string/language"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="@string/lang_e"
+                                android:textSize="22sp"
+                                android:textColor="#000"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="@string/english"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/layer2"
+                android:id="@+id/chapters_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_below="@id/chapters_rec"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99E8F5E9">
+
+                <TextView
+                    android:id="@+id/quote_info"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_quo"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/content_about2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.cardview.widget.CardView
+            android:elevation="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/bookmark_btn"
+                    android:onClick="bookMarkBtn"
+                    android:drawableTop="@drawable/ic_bookmark"
+                    android:layout_marginStart="25dp"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bookshelf"
+                    />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/remove_bookmark"
+                    android:onClick="removeBookMark"
+                    android:drawableTop="@drawable/ic_bookmark_dark"
+                    android:layout_marginStart="25dp"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bookshelf"
+                    />
+
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/read_btn_ncert"
+                    android:onClick="readBook"
+                    android:layout_gravity="end"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cav"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingStart="50dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingEnd="50dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
