@@ -14,12 +14,10 @@ Download the Demo from GDrive or v1 from the release section : <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](#)
 
-[![forthebadge](https://forthebadge.com/images/badges/winter-is-coming.svg)](#)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](#)
-[![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 
 * Books App with all the features anyone needs!!
-* Usese Firestore, Authentication and Storage , just setup with yours and you are ready to go.
+* Usese Firestore, Authentication and Storage , just setup with yours and go.
+* Built with SDK 29 and Build Tools 29.0.2 💖
 
 <img src="/Screen/1.png" height="583" width="350" />&nbsp;
 <img src="/Screen/6.png" height="583" width="350" />&nbsp;
