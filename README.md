@@ -48,5 +48,6 @@ Download the Demo from GDrive or vX.X from the release section : <br>
 * Fully Customizable reader
 
 ### Lots of Hardwork has been made on this project
-[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://fb.com/satyajiit)
-[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://fb.com/satyajiit) <br>
+[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers) <br>
+[![LinkedIN](/Screen/link.png)](https://www.linkedin.com/in/satyajiit/)
