@@ -1,6 +1,6 @@
-# BooksBay - THE ULTIMATE BOOKS APP : ALL FEATURES THAT ANYONE NEED!!
-Download the Demo from : <br>
-[![playstore](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
+# BooksBay - THE ULTIMATE BOOKS APP 
+Download the Demo from GDrive or v1 from the release section : <br>
+[![googledrive](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
 
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-blueviolet.svg)](#)
