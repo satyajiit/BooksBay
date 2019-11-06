@@ -1,5 +1,5 @@
 # GameX - THE WALLPAPPER APP
-[![playstore](/Screen/playstore.png)](https://play.google.com/store/apps/details?id=)
+[![playstore](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
 
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-blueviolet.svg)](#)
@@ -17,7 +17,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 
-* Games Wallpaper App for Android. Download Material Games Wallpapers free!
+* Books App with all the features anyone needs!!
+* Usese Firestore, Authentication and Storage , just setup with yours and you are ready to go.
 
 <img src="/Screen/1.png" height="583" width="350" />&nbsp;
 <img src="/Screen/2.png" height="583" width="350" />&nbsp;
