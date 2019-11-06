@@ -1,5 +1,5 @@
 # BooksBay - THE ULTIMATE BOOKS APP 
-Download the Demo from GDrive or v1 from the release section : <br>
+Download the Demo from GDrive or vX.X from the release section : <br>
 [![googledrive](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
 
 
@@ -14,10 +14,20 @@ Download the Demo from GDrive or v1 from the release section : <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](#)
 
+### TOP NOTES
 
 * Books App with all the features anyone needs!!
 * Usese Firestore, Authentication and Storage , just setup with yours and go.
 * Built with SDK 29 and Build Tools 29.0.2 💖
+
+#### SUPPORT THE WORK & DEV
+
+[![GitHub stars](https://img.shields.io/github/forks/satyajiit/BooksBay?style=social)](https://github.com/satyajiit/BooksBay/network) &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/satyajiit/BooksBay?style=social)](https://github.com/satyajiit/BooksBay/stargazers)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
+
+## SCREENSHOTS
 
 <img src="/Screen/1.png" height="583" width="350" />&nbsp;
 <img src="/Screen/6.png" height="583" width="350" />&nbsp;
@@ -38,4 +48,5 @@ Download the Demo from GDrive or v1 from the release section : <br>
 * Fully Customizable reader
 
 ### Lots of Hardwork has been made on this project
-[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://satyajiit.xyz)
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://fb.com/satyajiit)
+[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
