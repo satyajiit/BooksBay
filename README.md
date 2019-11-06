@@ -19,6 +19,8 @@ Download the Demo from GDrive or vX.X from the release section : <br>
 * Books App with all the features anyone needs!!
 * Usese Firestore, Authentication and Storage , just setup with yours and go.
 * Built with SDK 29 and Build Tools 29.0.2 💖
+* You can make your own Admin Panel using Firebase Hosting ( easy )
+* The Demo App doesn't have much books , For demo you can check CSE books and Class 6 NCERT MATHS book. 👍
 
 #### SUPPORT THE WORK & DEV
 
