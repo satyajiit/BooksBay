@@ -1,4 +1,5 @@
 # GameX - THE WALLPAPPER APP
+Download the Demo from : 
 [![playstore](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
 
 
