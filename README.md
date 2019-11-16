@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/satyajiit/BooksBay.svg?branch=master)](https://travis-ci.com/satyajiit/BooksBay)
+
 # BooksBay - THE ULTIMATE BOOKS APP 
 Download the Demo from GDrive or vX.X from the release section : <br>
 [![googledrive](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
@@ -14,6 +14,11 @@ Download the Demo from GDrive or vX.X from the release section : <br>
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](#)
+
+
+
+## TravisCI
+[![Build Status](https://travis-ci.com/satyajiit/BooksBay.svg?branch=master)](https://travis-ci.com/satyajiit/BooksBay)
 
 ### TOP NOTES
 
