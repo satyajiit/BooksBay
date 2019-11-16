@@ -16,14 +16,15 @@ android {
     }
 
     signingConfigs {
-        release {
+       // release {
 
-            storeFile file("sign.jks")
-            storePassword "password"
-            keyAlias "your_key_name"
-            keyPassword "password"
+            //storeFile file("sign.jks")
+            //storePassword "password"
+            //keyAlias "your_key_name"
+          //  keyPassword "password"
 
-        }
+        //}
+        
         }
 
 
