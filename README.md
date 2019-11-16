@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/satyajiit/BooksBay.svg?branch=master)](https://travis-ci.com/satyajiit/BooksBay)
+
 # BooksBay - THE ULTIMATE BOOKS APP 
 Download the Demo from GDrive or vX.X from the release section : <br>
 [![googledrive](/Screen/drive.jpg)](https://drive.google.com/open?id=1POGxNeOpRoMGSTyKx_64_S64YwAExbIg)
